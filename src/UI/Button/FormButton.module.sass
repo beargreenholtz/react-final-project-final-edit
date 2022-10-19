@@ -1,0 +1,31 @@
+
+.btn
+    background-image: linear-gradient(to right, #fd287c, #ff7654)
+    border-radius: 50px
+    width: 100%
+    height: 45px
+    border: 2px solid
+    font-size: 30px
+    color: white
+
+    outline: none
+    cursor: pointer
+
+    &:hover
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 4px 0 rgba(0,0,0,0.19)
+        outline: none
+
+    &:active
+        transform: scale(0.995)
+        outline: none
+    &:disabled
+        border: 1px solid #999999
+        background-color: #cccccc
+        color: #666666
+        background-image: none
+        cursor: auto
+        &:hover
+            box-shadow: none
+
+a
+    color: black

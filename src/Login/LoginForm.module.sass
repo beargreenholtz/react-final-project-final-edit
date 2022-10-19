@@ -1,0 +1,58 @@
+.input
+    display: flex
+    flex-direction: column
+    margin: auto
+    padding: 100px
+    max-width: 450px
+
+    & label
+        display: block
+        font-weight: bold
+        margin-bottom: 0.5rem
+
+    & input
+        font: inherit
+        display: block
+        width: 100%
+        border: 1px solid #ccc
+        padding: 5px
+        margin-bottom: 15px
+        border-radius: 8px
+
+    & input:focus
+        outline: none
+        border-color: #4f005f
+        background-color: rgba(white,0.8)
+
+textarea
+    border-radius: 8px
+    border: 1px solid #ccc
+    min-width: 450px
+    max-width: 450px
+    resize: none
+
+    &:focus
+        outline: none
+        border-color: #4f005f
+        background-color: rgba(white,0.8)
+
+.slide-out-top
+    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+@keyframes slide-out-top
+    0%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+        opacity: 1
+    100%
+        -webkit-transform: translateY(-1000px)
+        transform: translateY(-1000px)
+        opacity: 0
+
+.x
+
+    height: 30px
+    width: 30px
+    float: right
+    
